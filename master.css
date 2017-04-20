@@ -1,0 +1,337 @@
+html, body, main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  line-height: 1.4;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("https://res.cloudinary.com/whasting/image/upload/v1492670085/pixel-succulent_f1ax1f.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1, h2, h3, nav, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  height: auto;
+  margin: 0;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  -ms-flex-pack: center;
+}
+
+.navbar {
+  position: fixed;
+  left: 50%;
+  margin-left: -385px;
+  z-index: 1;
+  background-color: #B2DFDB;
+  border: 1px solid transparent;
+  height: 60px;
+  width: 770px;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+
+.nav-item {
+  background-color: #B2DFDB;
+  height: 62px;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+}
+
+.nav-item:hover {
+  background-color: #a0c9c5;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-initials {
+  margin: 0 25px;
+  font-size: 36px;
+}
+
+ul, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+}
+
+li {
+  padding: 0 45px;
+  font-size: 20px;
+}
+
+.bio-container {
+  position: relative;
+  top: 60px;
+  margin: 0 0 450px 0;
+  width: 770px;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: rgba(255,255,255, 0.95);
+  border: 1px solid transparent;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  min-height: 1px;
+}
+
+.portrait {
+  margin-top: 25px;
+  width: 225px;
+  height: 225px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.bio {
+  font-size: 20px;
+  width: 70%;
+}
+
+.contact {
+  width: calc(70% + 30px);
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  align-items: center;
+  -ms-flex-pack: center;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
+
+input {
+  margin-bottom: 8px;
+  height: 20px;
+}
+
+textarea, input {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.submit-button {
+  border: 1px transparent;
+  width: 100%;
+  height: 35px;
+  background-color: #526ede;
+  color: white;
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #4a63c8;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-links {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+.contact-link {
+  margin: 20px 35px 0 35px;
+  height: 50px;
+  width: 50px;
+}
+
+.contact-image {
+  height: 50px;
+  width: 50px;
+}
+
+.contact-link-angel {
+  margin: 20px 35px 0 35px;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px transparent;
+  border-radius: 10px;
+}
+
+.contact-image-angel {
+  height: 45px;
+}
+
+.subheaders {
+  font-size: 30px;
+  text-align: center;
+  margin: 65px 0 15px 0;
+}
+
+.subheaders.contact-title {
+  margin: 45px 0 5px 0;
+}
+
+.freetime-subheader {
+  width: calc(70% + 30px);
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 40px 0 10px 0;
+}
+
+.project-container {
+  margin: 0 0 20px 0;
+  padding: 10px 15px;
+  width: 70%;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  background-color: white;
+  min-height: 1px;
+}
+
+.project-container:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-icon {
+  height: 75px;
+  width: 75px;
+  min-height: 75px;
+  min-width: 75px;
+  max-height: 75px;
+  max-width: 75px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.project-description {
+  font-size: 18px;
+}
+
+.agar-js-icon {
+  height: 71px;
+  width: 71px;
+  min-height: 71px;
+  min-width: 71px;
+  max-height: 71px;
+  max-width: 71px;
+  background-color: #ff2d11;
+  border: 4px solid #f27b77;
+  border-radius: 50%;
+}
+
+.project-info-container {
+  margin-left: 15px;
+}
+
+.project-title {
+}
