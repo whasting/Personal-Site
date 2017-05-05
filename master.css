@@ -278,6 +278,14 @@ textarea {
   margin: 40px 0 10px 0;
 }
 
+.education-subheader {
+  width: calc(70% + 30px);
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 25px 0 10px 0;
+}
+
 .project-container {
   margin: 0 0 20px 0;
   padding: 10px 15px;
@@ -333,5 +341,86 @@ textarea {
   margin-left: 15px;
 }
 
-.project-title {
+.photo-squares {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.photo {
+  width: 165px;
+  height: 195px;
+  margin: 8px 14px 8px 0;
+  padding: 0;
+  display: block;
+}
+
+.photo-big {
+  width: 350px;
+  height: 250px;
+  margin: 8px 14px 8px 0;
+  padding: 0;
+  display: none;
+}
+
+@media only screen and (max-width: 667px) {
+  .navbar {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  li {
+    padding: 0 25px;
+    font-size: 20px;
+  }
+
+  .photo-squares {
+    flex-direction: column;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .photo-big {
+    display: block;
+  }
+
+  .bio-container {
+    width: 667px;
+  }
+}
+
+@media only screen and (max-width: 533px) {
+  .navbar {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  /*li {
+    padding: 0 45px;
+    font-size: 20px;
+  }*/
+
+  .photo-squares {
+    flex-direction: column;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .photo-big {
+    display: block;
+  }
+
+  .bio-container {
+    width: 533px;
+  }
 }
